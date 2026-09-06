@@ -17,7 +17,7 @@ public class Rectangle : Square
             B = b;
         }
 
-    // Overridden methods
+    // Method
     public override double GetArea() => A * B;
     public override double GetPerimeter() => 2 * (A + B);
 

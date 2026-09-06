@@ -16,7 +16,7 @@ public class Parallelogram : Rectangle
         {
             H = h;
         }
-    // Overridden methods
+    //  Method
     public override double GetArea() => B * H;
     private double ValidateH(double h)
         {

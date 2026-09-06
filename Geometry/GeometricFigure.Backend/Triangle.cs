@@ -1,7 +1,6 @@
 ﻿namespace GeometricFigure.Backend;
 public class Triangle : Rectangle
 {
- // Private fields
     private double _c;
     private double _h;
 
@@ -24,8 +23,8 @@ public class Triangle : Rectangle
             C = c;
             H = h;
         }
-    // Overridden methods
-    // Use base B as the triangle base so area = (base * height) / 2
+    //  Methods
+
     public override double GetArea() => (B * H) / 2.0;
     public override double GetPerimeter() => A + B + C;
 

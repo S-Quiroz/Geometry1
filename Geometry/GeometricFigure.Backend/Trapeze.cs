@@ -1,22 +1,21 @@
 ﻿namespace GeometricFigure.Backend;
 
 public class Trapeze : Triangle
-{
+{ 
     private double _d;
-
+    // Properties
     public double D
     {
         get => _d;
         set => _d = ValidateD(value);
     }
-
+    // Constructor
     public Trapeze(string name, double a, double b, double c, double d, double h)
         : base(name, a, b, c, h)
     {
         D = d;
     }
-
-    // Expected area in sample uses (A + B) * H (no division by 2)
+    // Method
     public override double GetArea() => (A + B) * H;
     public override double GetPerimeter() => A + B + C + D;
 
